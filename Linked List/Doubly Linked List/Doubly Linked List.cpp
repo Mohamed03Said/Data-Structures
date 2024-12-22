@@ -423,26 +423,16 @@ public:
 
 
 int main(){
-    DLinkedList list1;
-    list1.insert_end(10);
-    list1.insert_end(20);
-    list1.insert_end(30);
-    list1.insert_end(40);
-    list1.insert_end(50);
+    DLinkedList list;
+    list.insert_end(10);
+    list.insert_end(20);
+    list.insert_end(30);
+    list.insert_end(40);
+    list.insert_end(50);
 
-    DLinkedList list2;
-    list2.insert_end(15);
-    list2.insert_end(17);
-    list2.insert_end(22);
-    list2.insert_end(24);
-    list2.insert_end(35);
+    list.print();
 
-    list1.merge_2sorted_lists(list2);
-    list1.print();
-
-
-
-    list1.debug_verify_data_integrity();
+    list.debug_verify_data_integrity();
 
     cout<<"\n\nNO TLE..\n\n";
 
